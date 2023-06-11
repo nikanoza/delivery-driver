@@ -5,6 +5,8 @@ using UnityEngine;
 public class Trigger : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D other) {
-        Debug.Log("pass!");
+        if(other.tag == "Package"){
+            Debug.Log("pick up package");
+        }
     }
 }
